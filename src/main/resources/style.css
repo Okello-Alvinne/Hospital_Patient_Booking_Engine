@@ -1,0 +1,115 @@
+/* --- Global Variables and Base Settings --- */
+.root {
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-color: #f8f9fa; /* Ultra-light gray canvas */
+}
+
+/* --- Sidebar Styling --- */
+.sidebar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+    -fx-border-color:#e0e0e0;
+    -fx-border-width:0 1 0 0;
+}
+
+.sidebar-title {
+    -fx-text-fill: #96031A; /* Your deep crimson signature accent */
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-letter-spacing: 1px;
+}
+
+/* --- Modern Sidebar Buttons --- */
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 13px;
+    -fx-alignment: SIDE_LEFT;
+    -fx-padding: 10 15 10 15;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #96031A; /* Highlights crimson on hover */
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/* --- Input Form Elements --- */
+.label {
+    -fx-text-fill: #2b2b2b;
+    -fx-font-size: 13px;
+}
+
+.form-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0b0c10;
+}
+
+.text-field, .text-area, .date-picker {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 7;
+}
+
+.text-field:focused, .text-area:focused, .date-picker:focused {
+    -fx-border-color: #96031A; /* Highlights fields in crimson when typing */
+    -fx-border-width: 1.5;
+}
+
+/* --- Action Buttons (Submit/Save) --- */
+.action-button {
+    -fx-background-color: #96031A;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #730213; /* Darker variant of crimson for hover depth */
+}
+
+/* --- Modern TableView Styling --- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #0b0c10; /* Black header row */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 40;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff; /* White column text */
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-cell-size: 35;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f1f2f6; /* Subtle zebra striping */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #96031A; /* Crimson selected highlight row */
+}
+.table-row-cell:selected .label {
+    -fx-text-fill: #ffffff;
+}
